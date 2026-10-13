@@ -6,5 +6,6 @@
 [node name="Node2D" type="Node2D" unique_id=1825026723]
 
 [node name="Character" parent="." unique_id=523245195 instance=ExtResource("1_uu6xs")]
+position = Vector2(429, 587)
 
 [node name="Level" parent="." unique_id=1438618234 instance=ExtResource("2_r0du0")]
