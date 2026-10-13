@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://cdkl1154g5ttr"]
 
-[ext_resource type="Script" uid="uid://d0wtdjix2gvxn" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://c8btin5j0bq2c" path="res://scripts/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://dj1oes73g35yh" path="res://assets/Hunter.png" id="2_onrkg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_37okk"]
 height = 58.0
 
 [node name="Character" type="CharacterBody2D" unique_id=150940956]
-script = ExtResource("1_4flbx")
+script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=115369754]
 texture = ExtResource("2_onrkg")
