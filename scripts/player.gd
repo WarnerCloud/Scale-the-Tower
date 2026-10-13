@@ -6,6 +6,15 @@ const JUMP_VELOCITY = -600.0
 
 const NUM_LIVES = 3
 
+var lives
+
+func _init() -> void:
+	lives = NUM_LIVES
+
+func take_damage() -> void:
+	lives -= 1
+	print(lives)
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
