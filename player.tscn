@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://cdkl1154g5ttr"]
 
-[node name="Sprite2D" type="Sprite2D" unique_id=523245195]
+[ext_resource type="Script" uid="uid://d0wtdjix2gvxn" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dj1oes73g35yh" path="res://assets/Hunter.png" id="2_onrkg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_37okk"]
+height = 58.0
+
+[node name="Character" type="CharacterBody2D" unique_id=150940956]
+script = ExtResource("1_4flbx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=115369754]
+texture = ExtResource("2_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=872882337]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_37okk")
