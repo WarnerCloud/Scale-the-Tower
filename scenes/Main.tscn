@@ -4,15 +4,20 @@
 [ext_resource type="PackedScene" uid="uid://cdkl1154g5ttr" path="res://scenes/Player.tscn" id="3_0bbpv"]
 [ext_resource type="PackedScene" uid="uid://bteoouq734v8o" path="res://scenes/Hazard.tscn" id="3_vcsgt"]
 
-[node name="Node2D" type="Node2D" unique_id=1825026723]
+[node name="Game" type="Node2D" unique_id=1825026723]
 
 [node name="Level" parent="." unique_id=1438618234 instance=ExtResource("2_rarhs")]
+position = Vector2(0, -640)
 
 [node name="Hazard" parent="." unique_id=1892835829 instance=ExtResource("3_vcsgt")]
-position = Vector2(669, 597)
+position = Vector2(669, -43)
 
 [node name="Character" parent="." unique_id=150940956 instance=ExtResource("3_0bbpv")]
+position = Vector2(575, -62)
+metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Character" unique_id=891723012]
-limit_bottom = 650
+limit_left = 0
+limit_right = 1500
+limit_bottom = 0
 position_smoothing_enabled = true
