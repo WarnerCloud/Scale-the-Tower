@@ -13,6 +13,9 @@ position = Vector2(0, -640)
 [node name="Hazard" parent="." unique_id=1892835829 instance=ExtResource("3_vcsgt")]
 position = Vector2(669, -43)
 
+[node name="Platform" parent="." unique_id=683616483 instance=ExtResource("4_rarhs")]
+position = Vector2(644, -130)
+
 [node name="Character" parent="." unique_id=150940956 instance=ExtResource("3_0bbpv")]
 position = Vector2(575, -62)
 metadata/_edit_group_ = true
@@ -22,6 +25,3 @@ limit_left = 0
 limit_right = 1500
 limit_bottom = 0
 position_smoothing_enabled = true
-
-[node name="Platform" parent="." unique_id=683616483 instance=ExtResource("4_rarhs")]
-position = Vector2(644, -130)
