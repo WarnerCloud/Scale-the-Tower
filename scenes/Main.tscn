@@ -24,4 +24,5 @@ metadata/_edit_group_ = true
 limit_left = 0
 limit_right = 1500
 limit_bottom = 0
+limit_smoothed = true
 position_smoothing_enabled = true
