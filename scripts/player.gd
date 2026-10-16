@@ -7,13 +7,17 @@ const JUMP_VELOCITY = -600.0
 const NUM_LIVES = 3
 
 var lives
+var taking_damage
+var animation_time
 
 func _init() -> void:
 	lives = NUM_LIVES
+	taking_damage = false
 
 func take_damage() -> void:
 	lives -= 1
 	print(lives)
+	taking_damage = true;	
 
 
 func _physics_process(delta: float) -> void:
