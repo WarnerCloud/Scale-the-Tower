@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dj6nkp8wk0e36" path="res://scenes/Level.tscn" id="2_rarhs"]
 [ext_resource type="PackedScene" uid="uid://cdkl1154g5ttr" path="res://scenes/Player.tscn" id="3_0bbpv"]
 [ext_resource type="PackedScene" uid="uid://bteoouq734v8o" path="res://scenes/Hazard.tscn" id="3_vcsgt"]
+[ext_resource type="PackedScene" uid="uid://daw1y03v2fcgq" path="res://scenes/Platform.tscn" id="4_rarhs"]
 
 [node name="Game" type="Node2D" unique_id=1825026723]
 
@@ -21,3 +22,6 @@ limit_left = 0
 limit_right = 1500
 limit_bottom = 0
 position_smoothing_enabled = true
+
+[node name="Platform" parent="." unique_id=683616483 instance=ExtResource("4_rarhs")]
+position = Vector2(644, -130)
