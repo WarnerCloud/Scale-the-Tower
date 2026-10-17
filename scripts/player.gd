@@ -42,12 +42,13 @@ func _physics_process(delta: float) -> void:
 
 func _on_death_timer_timeout() -> void:
 	lives -= 1
+	if (lives == 0):
+		get_tree().reload_current_scene()
+
 	collision_shape.set_deferred("disabled", false)
 	velocity = Vector2(0, 0)
 	global_position = reset_pos
 	player_locked = false
-
-
 
 func take_damage() -> void:
 	if (player_locked):

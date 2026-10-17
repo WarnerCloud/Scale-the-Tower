@@ -25,7 +25,6 @@ position = Vector2(574, -52)
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Character" unique_id=891723012]
-limit_enabled = false
 limit_left = 0
 limit_right = 1500
 limit_bottom = 0
