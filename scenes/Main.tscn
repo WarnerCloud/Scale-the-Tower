@@ -7,6 +7,10 @@
 
 [node name="Game" type="Node2D" unique_id=1825026723]
 
+[node name="DeathTimer" type="Timer" parent="." unique_id=711574262]
+wait_time = 0.6
+one_shot = true
+
 [node name="Level" parent="." unique_id=1438618234 instance=ExtResource("2_rarhs")]
 position = Vector2(0, -640)
 
@@ -21,8 +25,15 @@ position = Vector2(575, -62)
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Character" unique_id=891723012]
+limit_enabled = false
 limit_left = 0
 limit_right = 1500
 limit_bottom = 0
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="StartPosition" type="Marker2D" parent="." unique_id=873573980]
+position = Vector2(92, -27)
+
+[connection signal="timeout" from="DeathTimer" to="Character" method="_on_death_timer_timeout"]
+[connection signal="ready" from="Character" to="Character" method="_on_ready"]
