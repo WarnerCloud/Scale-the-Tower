@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ci7322ju0pd2l"]
+
+[ext_resource type="Texture2D" uid="uid://dx8y3ailatvck" path="res://assets/flag.png" id="1_s2agh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6we3g"]
+size = Vector2(15, 22)
+
+[node name="checkpoint" type="Area2D" unique_id=290667989]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=831674972]
+texture_filter = 1
+position = Vector2(5, -12)
+texture = ExtResource("1_s2agh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1644683964]
+position = Vector2(7.5, -11)
+shape = SubResource("RectangleShape2D_6we3g")

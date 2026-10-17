@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bmjd5o5a8e8c5"]
+
+[ext_resource type="Script" uid="uid://doscs71lg14if" path="res://scripts/hazard.gd" id="1_mxurn"]
+
+[node name="Area2D" type="Area2D" unique_id=738268983]
+collision_mask = 2
+script = ExtResource("1_mxurn")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
