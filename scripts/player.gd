@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@onready var timer: Timer = $"../DeathTimer"
-@onready var start_position: Node2D = $"../StartPosition"
+@onready var timer: Timer = %DeathTimer
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
+@onready var start_position: Marker2D = %StartPosition
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
