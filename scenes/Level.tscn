@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://dj6nkp8wk0e36"]
 
+[ext_resource type="Texture2D" uid="uid://bls5gqaw48v8r" path="res://assets/tower.png" id="1_6vs76"]
 [ext_resource type="Texture2D" uid="uid://rna7uv1a2n8s" path="res://assets/test.png" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://ci7322ju0pd2l" path="res://scenes/Checkpoint.tscn" id="2_k5jlv"]
 
@@ -29,6 +30,12 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_vonw3")
 
 [node name="Level" type="Node2D" unique_id=1438618234]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1566318722]
+texture_filter = 1
+position = Vector2(580, -1861.0001)
+scale = Vector2(4.863203, 4.863203)
+texture = ExtResource("1_6vs76")
 
 [node name="checkpoint" parent="." unique_id=290667989 instance=ExtResource("2_k5jlv")]
 position = Vector2(447, 496)
