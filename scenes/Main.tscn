@@ -21,7 +21,7 @@ position = Vector2(669, -43)
 position = Vector2(644, -130)
 
 [node name="Character" parent="." unique_id=150940956 instance=ExtResource("3_0bbpv")]
-position = Vector2(575, -62)
+position = Vector2(574, -52)
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Character" unique_id=891723012]

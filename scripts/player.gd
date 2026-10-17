@@ -20,15 +20,6 @@ func _on_ready() -> void:
 	reset_pos = start_position.global_position
 	position = reset_pos
 
-func take_damage() -> void:
-	if (player_locked):
-		return
-	collision_shape.set_deferred("disabled", true)
-	velocity.y = JUMP_VELOCITY/4
-	velocity.x = 0
-	player_locked = true
-	timer.start()
-
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -47,7 +38,6 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	
 	move_and_slide()
 
 func _on_death_timer_timeout() -> void:
@@ -56,3 +46,17 @@ func _on_death_timer_timeout() -> void:
 	velocity = Vector2(0, 0)
 	global_position = reset_pos
 	player_locked = false
+
+
+
+func take_damage() -> void:
+	if (player_locked):
+		return
+	collision_shape.set_deferred("disabled", true)
+	velocity.y = JUMP_VELOCITY/4
+	velocity.x = 0
+	player_locked = true
+	timer.start()
+
+func update_respawn(pos: Vector2):
+	reset_pos = pos
