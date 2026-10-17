@@ -8,6 +8,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
 const NUM_LIVES = 3
+const KILL_SPEED = 1000
 
 var lives
 var reset_pos
@@ -22,6 +23,10 @@ func _on_ready() -> void:
 	position = reset_pos
 
 func _physics_process(delta: float) -> void:
+	# die if falling too fast
+	if (velocity.y > KILL_SPEED):
+		take_damage()
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
