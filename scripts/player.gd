@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var timer: Timer = %DeathTimer
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var start_position: Marker2D = %StartPosition
+@onready var scoreboard: CanvasLayer = %Scoreboard
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
@@ -49,6 +50,8 @@ func _on_death_timer_timeout() -> void:
 	velocity = Vector2(0, 0)
 	global_position = reset_pos
 	player_locked = false
+	scoreboard.update_score(lives)
+
 
 func take_damage() -> void:
 	if (player_locked):

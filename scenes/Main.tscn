@@ -3,11 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://dj6nkp8wk0e36" path="res://scenes/Level.tscn" id="2_rarhs"]
 [ext_resource type="PackedScene" uid="uid://cdkl1154g5ttr" path="res://scenes/Player.tscn" id="3_0bbpv"]
 [ext_resource type="PackedScene" uid="uid://bteoouq734v8o" path="res://scenes/Hazard.tscn" id="3_vcsgt"]
-[ext_resource type="PackedScene" uid="uid://daw1y03v2fcgq" path="res://scenes/Platform.tscn" id="4_rarhs"]
+[ext_resource type="Script" uid="uid://cjsm3afqu26h5" path="res://scripts/scoreboard.gd" id="5_vcsgt"]
 
 [node name="Game" type="Node2D" unique_id=1825026723]
 
 [node name="DeathTimer" type="Timer" parent="." unique_id=711574262]
+unique_name_in_owner = true
 wait_time = 0.6
 one_shot = true
 
@@ -16,9 +17,6 @@ position = Vector2(0, -640)
 
 [node name="Hazard" parent="." unique_id=1892835829 instance=ExtResource("3_vcsgt")]
 position = Vector2(669, -43)
-
-[node name="Platform" parent="." unique_id=683616483 instance=ExtResource("4_rarhs")]
-position = Vector2(644, -130)
 
 [node name="Character" parent="." unique_id=150940956 instance=ExtResource("3_0bbpv")]
 position = Vector2(574, -52)
@@ -32,7 +30,18 @@ limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="StartPosition" type="Marker2D" parent="." unique_id=873573980]
+unique_name_in_owner = true
 position = Vector2(92, -27)
+
+[node name="Scoreboard" type="CanvasLayer" parent="." unique_id=1102867594]
+unique_name_in_owner = true
+script = ExtResource("5_vcsgt")
+
+[node name="LivesCounter" type="Label" parent="Scoreboard" unique_id=874298550]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Lives Remaining: 3"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="DeathTimer" to="Character" method="_on_death_timer_timeout"]
 [connection signal="ready" from="Character" to="Character" method="_on_ready"]
