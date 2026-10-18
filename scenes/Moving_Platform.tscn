@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d2dt0loijrx2o"]
+
+[ext_resource type="PackedScene" uid="uid://daw1y03v2fcgq" path="res://scenes/Platform.tscn" id="1_pwhlt"]
+
+[sub_resource type="Animation" id="Animation_go2ve"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Platform:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_pwhlt"]
+resource_name = "move_platform"
+length = 3.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Platform:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(200, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_go2ve"]
+_data = {
+&"RESET": SubResource("Animation_go2ve"),
+&"move_platform": SubResource("Animation_pwhlt")
+}
+
+[node name="MovingPlatform" type="Node2D" unique_id=987523759]
+
+[node name="Platform" parent="." unique_id=683616483 instance=ExtResource("1_pwhlt")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1766081194]
+libraries/ = SubResource("AnimationLibrary_go2ve")
+autoplay = &"move_platform"

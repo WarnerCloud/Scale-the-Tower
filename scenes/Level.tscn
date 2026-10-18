@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ci7322ju0pd2l" path="res://scenes/Checkpoint.tscn" id="2_k5jlv"]
 [ext_resource type="PackedScene" uid="uid://b4m7n568yckan" path="res://scenes/Goal.tscn" id="2_qifjx"]
 [ext_resource type="PackedScene" uid="uid://daw1y03v2fcgq" path="res://scenes/Platform.tscn" id="4_kl8ac"]
+[ext_resource type="PackedScene" uid="uid://d2dt0loijrx2o" path="res://scenes/Moving_Platform.tscn" id="6_dke22"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vonw3"]
 texture = ExtResource("1_u52ul")
@@ -45,93 +46,92 @@ tile_map_data = PackedByteArray("AAAAACcAAQABAAEAAAABACcAAQABAAEAAAACACcAAQABAAE
 tile_set = SubResource("TileSet_i3pqv")
 
 [node name="Platforms" type="Node2D" parent="." unique_id=611698082]
-position = Vector2(270.95996, -3.040039)
 
 [node name="Platform" parent="Platforms" unique_id=683616483 instance=ExtResource("4_kl8ac")]
-position = Vector2(326, 558)
+position = Vector2(594, 558)
 
 [node name="Platform3" parent="Platforms" unique_id=2067982565 instance=ExtResource("4_kl8ac")]
-position = Vector2(667, 563)
+position = Vector2(935, 563)
 
 [node name="Platform2" parent="Platforms" unique_id=712033898 instance=ExtResource("4_kl8ac")]
-position = Vector2(500, 487)
+position = Vector2(768, 487)
 
 [node name="Platform4" parent="Platforms" unique_id=289010685 instance=ExtResource("4_kl8ac")]
-position = Vector2(672, 396)
+position = Vector2(940, 396)
 
 [node name="Platform13" parent="Platforms" unique_id=1361915265 instance=ExtResource("4_kl8ac")]
-position = Vector2(609.04004, -237.95996)
-
-[node name="Platform14" parent="Platforms" unique_id=44071533 instance=ExtResource("4_kl8ac")]
-position = Vector2(292.04004, -309.95996)
-
-[node name="Platform15" parent="Platforms" unique_id=1754764251 instance=ExtResource("4_kl8ac")]
-position = Vector2(493.04004, -422.95996)
+position = Vector2(1164, -254)
 
 [node name="Platform16" parent="Platforms" unique_id=1310636103 instance=ExtResource("4_kl8ac")]
-position = Vector2(769.04004, -431.95996)
+position = Vector2(1037.04, -431.95996)
 
-[node name="Platform17" parent="Platforms" unique_id=1161604230 instance=ExtResource("4_kl8ac")]
-position = Vector2(669.04004, -670.95996)
+[node name="Platform28" parent="Platforms" unique_id=777954588 instance=ExtResource("4_kl8ac")]
+position = Vector2(1101.04, -431.95996)
 
 [node name="Platform18" parent="Platforms" unique_id=336391392 instance=ExtResource("4_kl8ac")]
-position = Vector2(462.04004, -560.95996)
+position = Vector2(730.04004, -560.95996)
 
 [node name="Platform19" parent="Platforms" unique_id=1148301134 instance=ExtResource("4_kl8ac")]
-position = Vector2(311.04004, -667.95996)
+position = Vector2(579.04004, -667.95996)
 
 [node name="Platform20" parent="Platforms" unique_id=1583898100 instance=ExtResource("4_kl8ac")]
-position = Vector2(421.04004, -824.95996)
+position = Vector2(689.04004, -824.95996)
 
 [node name="Platform21" parent="Platforms" unique_id=2023080917 instance=ExtResource("4_kl8ac")]
-position = Vector2(581.04004, -921.95996)
+position = Vector2(771, -945)
 
 [node name="Platform22" parent="Platforms" unique_id=1320314326 instance=ExtResource("4_kl8ac")]
-position = Vector2(763.04004, -843.95996)
+position = Vector2(1031.04, -843.95996)
 
 [node name="Platform27" parent="Platforms" unique_id=2125141375 instance=ExtResource("4_kl8ac")]
-position = Vector2(827.04004, -843.95996)
+position = Vector2(1095.04, -843.95996)
 
 [node name="Platform23" parent="Platforms" unique_id=2024230549 instance=ExtResource("4_kl8ac")]
-position = Vector2(772.04004, -1056.96)
+position = Vector2(1112, -1110)
+
+[node name="Platform30" parent="Platforms" unique_id=1052100880 instance=ExtResource("4_kl8ac")]
+position = Vector2(1111, -972)
 
 [node name="Platform24" parent="Platforms" unique_id=1257826973 instance=ExtResource("4_kl8ac")]
-position = Vector2(665.04004, -1216.96)
+position = Vector2(933.04004, -1216.96)
 
 [node name="Platform25" parent="Platforms" unique_id=1542066937 instance=ExtResource("4_kl8ac")]
-position = Vector2(383.04004, -1112.96)
+position = Vector2(651.04004, -1112.96)
 
 [node name="Platform26" parent="Platforms" unique_id=244403040 instance=ExtResource("4_kl8ac")]
-position = Vector2(447.04004, -1112.96)
+position = Vector2(715.04004, -1112.96)
 
 [node name="Platform5" parent="Platforms" unique_id=112392288 instance=ExtResource("4_kl8ac")]
-position = Vector2(481, 301)
+position = Vector2(749, 301)
 
 [node name="Platform6" parent="Platforms" unique_id=1523987562 instance=ExtResource("4_kl8ac")]
-position = Vector2(238, 365)
+position = Vector2(506, 365)
 
 [node name="Platform7" parent="Platforms" unique_id=459622589 instance=ExtResource("4_kl8ac")]
-position = Vector2(172, 482)
+position = Vector2(440, 482)
 
 [node name="Platform8" parent="Platforms" unique_id=475346752 instance=ExtResource("4_kl8ac")]
-position = Vector2(884, 246)
+position = Vector2(1152, 246)
 
 [node name="Platform9" parent="Platforms" unique_id=872452260 instance=ExtResource("4_kl8ac")]
-position = Vector2(686, 106)
+position = Vector2(954, 106)
 
 [node name="Platform10" parent="Platforms" unique_id=1986577197 instance=ExtResource("4_kl8ac")]
-position = Vector2(455, -10)
+position = Vector2(723, -10)
 
-[node name="Platform11" parent="Platforms" unique_id=1188696489 instance=ExtResource("4_kl8ac")]
-position = Vector2(794, -98)
+[node name="Platform29" parent="Platforms" unique_id=1504746457 instance=ExtResource("4_kl8ac")]
+position = Vector2(659.04004, -9.959961)
 
 [node name="Platform12" parent="Platforms" unique_id=874626922 instance=ExtResource("4_kl8ac")]
-position = Vector2(307, 155)
+position = Vector2(575, 155)
+
+[node name="MovingPlatform" parent="Platforms" unique_id=2063177087 instance=ExtResource("6_dke22")]
+position = Vector2(989.04004, -102.95996)
 
 [node name="Checkpoints" type="Node2D" parent="." unique_id=630425738]
 
 [node name="checkpoint" parent="Checkpoints" unique_id=290667989 instance=ExtResource("2_k5jlv")]
-position = Vector2(767.95996, 472.95996)
+position = Vector2(650, -19)
 
 [node name="Goal" parent="." unique_id=2067666519 instance=ExtResource("2_qifjx")]
-position = Vector2(600, 556)
+position = Vector2(889, -3929)
