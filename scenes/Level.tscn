@@ -51,7 +51,16 @@ tile_set = SubResource("TileSet_i3pqv")
 [node name="Platforms" type="Node2D" parent="." unique_id=611698082]
 
 [node name="Platform13" parent="Platforms" unique_id=1361915265 instance=ExtResource("4_kl8ac")]
-position = Vector2(1164, -254)
+position = Vector2(1164, -252)
+
+[node name="Platform35" parent="Platforms" unique_id=683616483 instance=ExtResource("4_kl8ac")]
+position = Vector2(841, -3161)
+
+[node name="Platform36" parent="Platforms" unique_id=428074339 instance=ExtResource("4_kl8ac")]
+position = Vector2(947, -3263)
+
+[node name="Platform37" parent="Platforms" unique_id=485488170 instance=ExtResource("4_kl8ac")]
+position = Vector2(820, -3402)
 
 [node name="Platform16" parent="Platforms" unique_id=1310636103 instance=ExtResource("4_kl8ac")]
 position = Vector2(1037.04, -431.95996)
@@ -86,7 +95,7 @@ position = Vector2(1111, -972)
 [node name="Platform24" parent="Platforms" unique_id=1257826973 instance=ExtResource("4_kl8ac")]
 position = Vector2(933.04004, -1216.96)
 
-[node name="Platform31" parent="Platforms" unique_id=683616483 instance=ExtResource("4_kl8ac")]
+[node name="Platform31" parent="Platforms" unique_id=530338238 instance=ExtResource("4_kl8ac")]
 position = Vector2(803, -1386)
 
 [node name="Platform25" parent="Platforms" unique_id=1542066937 instance=ExtResource("4_kl8ac")]
@@ -113,6 +122,48 @@ position = Vector2(1019, -1642)
 [node name="Platform" parent="Platforms" unique_id=276260942 instance=ExtResource("4_kl8ac")]
 position = Vector2(773, -1642)
 
+[node name="Platform2" parent="Platforms" unique_id=682352358 instance=ExtResource("4_kl8ac")]
+position = Vector2(1132, -1816)
+
+[node name="Platform3" parent="Platforms" unique_id=1801235700 instance=ExtResource("4_kl8ac")]
+position = Vector2(973, -1892)
+
+[node name="Platform4" parent="Platforms" unique_id=1736361471 instance=ExtResource("4_kl8ac")]
+position = Vector2(818, -2013)
+
+[node name="Platform5" parent="Platforms" unique_id=1176360369 instance=ExtResource("4_kl8ac")]
+position = Vector2(861, -2165)
+
+[node name="Platform6" parent="Platforms" unique_id=1220067505 instance=ExtResource("4_kl8ac")]
+position = Vector2(797, -2165)
+
+[node name="Platform7" parent="Platforms" unique_id=544213091 instance=ExtResource("4_kl8ac")]
+position = Vector2(733, -2165)
+
+[node name="Platform8" parent="Platforms" unique_id=1293308744 instance=ExtResource("4_kl8ac")]
+position = Vector2(669, -2165)
+
+[node name="Platform11" parent="Platforms" unique_id=371299575 instance=ExtResource("4_kl8ac")]
+position = Vector2(1053, -2165)
+
+[node name="Platform15" parent="Platforms" unique_id=813469737 instance=ExtResource("4_kl8ac")]
+position = Vector2(1107, -2334)
+
+[node name="Platform17" parent="Platforms" unique_id=1773019486 instance=ExtResource("4_kl8ac")]
+position = Vector2(1028, -2443)
+
+[node name="Platform33" parent="Platforms" unique_id=714985648 instance=ExtResource("4_kl8ac")]
+position = Vector2(843, -2444)
+
+[node name="Platform34" parent="Platforms" unique_id=370289027 instance=ExtResource("4_kl8ac")]
+position = Vector2(841, -2552)
+
+[node name="Platform12" parent="Platforms" unique_id=786199350 instance=ExtResource("4_kl8ac")]
+position = Vector2(989, -2165)
+
+[node name="Platform14" parent="Platforms" unique_id=1192095364 instance=ExtResource("4_kl8ac")]
+position = Vector2(925, -2165)
+
 [node name="Checkpoints" type="Node2D" parent="." unique_id=630425738]
 
 [node name="checkpoint" parent="Checkpoints" unique_id=290667989 instance=ExtResource("2_k5jlv")]
@@ -120,6 +171,12 @@ position = Vector2(650, -19)
 
 [node name="checkpoint2" parent="Checkpoints" unique_id=2088016771 instance=ExtResource("2_k5jlv")]
 position = Vector2(1095, -850)
+
+[node name="checkpoint3" parent="Checkpoints" unique_id=851832226 instance=ExtResource("2_k5jlv")]
+position = Vector2(1021, -2171)
+
+[node name="checkpoint4" parent="Checkpoints" unique_id=863868336 instance=ExtResource("2_k5jlv")]
+position = Vector2(819, -3408)
 
 [node name="Goal" parent="." unique_id=2067666519 instance=ExtResource("2_qifjx")]
 position = Vector2(889, -3929)
@@ -214,6 +271,65 @@ position = Vector2(0, -192)
 [node name="Ladder8" parent="Ladders/Ladder2" unique_id=1114135143 instance=ExtResource("7_4qegb")]
 position = Vector2(0, -224)
 
+[node name="Ladder3" type="Node2D" parent="Ladders" unique_id=293343964]
+position = Vector2(841, -2556)
+
+[node name="Ladder" parent="Ladders/Ladder3" unique_id=508430187 instance=ExtResource("7_4qegb")]
+
+[node name="Ladder2" parent="Ladders/Ladder3" unique_id=820641242 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -32)
+
+[node name="Ladder3" parent="Ladders/Ladder3" unique_id=1304007318 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -64)
+
+[node name="Ladder4" parent="Ladders/Ladder3" unique_id=1346327317 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -96)
+
+[node name="Ladder5" parent="Ladders/Ladder3" unique_id=1232722966 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -128)
+
+[node name="Ladder6" parent="Ladders/Ladder3" unique_id=110439656 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -160)
+
+[node name="Ladder7" parent="Ladders/Ladder3" unique_id=1752418039 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -192)
+
+[node name="Ladder8" parent="Ladders/Ladder3" unique_id=1889353430 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -224)
+
+[node name="Ladder9" parent="Ladders/Ladder3" unique_id=1691718875 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -256)
+
+[node name="Ladder10" parent="Ladders/Ladder3" unique_id=1440310238 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -288)
+
+[node name="Ladder11" parent="Ladders/Ladder3" unique_id=2096805134 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -320)
+
+[node name="Ladder12" parent="Ladders/Ladder3" unique_id=846801367 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -352)
+
+[node name="Ladder13" parent="Ladders/Ladder3" unique_id=1711880969 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -384)
+
+[node name="Ladder14" parent="Ladders/Ladder3" unique_id=1642983099 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -416)
+
+[node name="Ladder15" parent="Ladders/Ladder3" unique_id=409197197 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -448)
+
+[node name="Ladder16" parent="Ladders/Ladder3" unique_id=425077608 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -480)
+
+[node name="Ladder17" parent="Ladders/Ladder3" unique_id=1380763627 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -512)
+
+[node name="Ladder18" parent="Ladders/Ladder3" unique_id=1672238093 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -544)
+
+[node name="Ladder19" parent="Ladders/Ladder3" unique_id=1173342950 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -576)
+
 [node name="Hazards" type="Node2D" parent="." unique_id=1905558971]
 
 [node name="Hazard" parent="Hazards" unique_id=2020199833 instance=ExtResource("8_faw0r")]
@@ -225,11 +341,85 @@ position = Vector2(699, -1133)
 [node name="Hazard3" parent="Hazards" unique_id=236507662 instance=ExtResource("8_faw0r")]
 position = Vector2(1016, -864)
 
-[node name="Birds" parent="." unique_id=1903243564 instance=ExtResource("9_2eouu")]
+[node name="Hazard4" parent="Hazards" unique_id=1035810129 instance=ExtResource("8_faw0r")]
+position = Vector2(957, -1912)
+
+[node name="Hazard13" parent="Hazards" unique_id=636925658 instance=ExtResource("8_faw0r")]
+position = Vector2(861, -2185)
+
+[node name="Hazard19" parent="Hazards" unique_id=1305855627 instance=ExtResource("8_faw0r")]
+position = Vector2(893, -2185)
+
+[node name="Hazard20" parent="Hazards" unique_id=625984967 instance=ExtResource("8_faw0r")]
+position = Vector2(925, -2185)
+
+[node name="Hazard21" parent="Hazards" unique_id=436517766 instance=ExtResource("8_faw0r")]
+position = Vector2(957, -2185)
+
+[node name="Hazard22" parent="Hazards" unique_id=1280239216 instance=ExtResource("8_faw0r")]
+position = Vector2(989, -2185)
+
+[node name="Hazard23" parent="Hazards" unique_id=29482430 instance=ExtResource("8_faw0r")]
+position = Vector2(1069, -2185)
+
+[node name="Hazard14" parent="Hazards" unique_id=94383281 instance=ExtResource("8_faw0r")]
+position = Vector2(781, -2185)
+
+[node name="Hazard15" parent="Hazards" unique_id=1704038151 instance=ExtResource("8_faw0r")]
+position = Vector2(749, -2185)
+
+[node name="Hazard16" parent="Hazards" unique_id=38736369 instance=ExtResource("8_faw0r")]
+position = Vector2(717, -2185)
+
+[node name="Hazard17" parent="Hazards" unique_id=987428633 instance=ExtResource("8_faw0r")]
+position = Vector2(685, -2185)
+
+[node name="Hazard18" parent="Hazards" unique_id=498241217 instance=ExtResource("8_faw0r")]
+position = Vector2(653, -2185)
+
+[node name="Hazard5" parent="Hazards" unique_id=779505531 instance=ExtResource("8_faw0r")]
+position = Vector2(430, 608)
+
+[node name="Hazard6" parent="Hazards" unique_id=1071126637 instance=ExtResource("8_faw0r")]
+position = Vector2(462, 608)
+
+[node name="Hazard7" parent="Hazards" unique_id=1167245007 instance=ExtResource("8_faw0r")]
+position = Vector2(494, 608)
+
+[node name="Hazard8" parent="Hazards" unique_id=1587695953 instance=ExtResource("8_faw0r")]
+position = Vector2(526, 608)
+
+[node name="Hazard9" parent="Hazards" unique_id=2020560093 instance=ExtResource("8_faw0r")]
+position = Vector2(825, 608)
+
+[node name="Hazard11" parent="Hazards" unique_id=1683947198 instance=ExtResource("8_faw0r")]
+position = Vector2(889, 608)
+
+[node name="Hazard12" parent="Hazards" unique_id=838822429 instance=ExtResource("8_faw0r")]
+position = Vector2(921, 608)
+
+[node name="Hazard10" parent="Hazards" unique_id=126096727 instance=ExtResource("8_faw0r")]
+position = Vector2(857, 608)
+
+[node name="Birds" type="Node2D" parent="." unique_id=1891828028]
+
+[node name="Birds1" parent="Birds" unique_id=1903243564 instance=ExtResource("9_2eouu")]
 position = Vector2(853, -256)
 
-[node name="Birds2" parent="." unique_id=370887248 instance=ExtResource("9_2eouu")]
+[node name="Birds2" parent="Birds" unique_id=370887248 instance=ExtResource("9_2eouu")]
 position = Vector2(808, -1512)
 
-[node name="Birds3" parent="." unique_id=436157478 instance=ExtResource("9_2eouu")]
-position = Vector2(900, -1722)
+[node name="Birds3" parent="Birds" unique_id=436157478 instance=ExtResource("9_2eouu")]
+position = Vector2(611, -1790)
+
+[node name="Birds4" parent="Birds" unique_id=1392738165 instance=ExtResource("9_2eouu")]
+position = Vector2(839, -2593)
+
+[node name="Birds5" parent="Birds" unique_id=1026685703 instance=ExtResource("9_2eouu")]
+position = Vector2(660, -2894)
+
+[node name="Birds7" parent="Birds" unique_id=678992739 instance=ExtResource("9_2eouu")]
+position = Vector2(685, -3290)
+
+[node name="Birds6" parent="Birds" unique_id=1391214971 instance=ExtResource("9_2eouu")]
+position = Vector2(850, -3132)
