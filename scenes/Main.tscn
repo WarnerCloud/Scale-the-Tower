@@ -28,7 +28,7 @@ one_shot = true
 position = Vector2(0, -640)
 
 [node name="Hazard" parent="." unique_id=1892835829 instance=ExtResource("3_vcsgt")]
-position = Vector2(669, -43)
+position = Vector2(827, -43)
 
 [node name="Character" parent="." unique_id=150940956 instance=ExtResource("3_0bbpv")]
 position = Vector2(574, -52)

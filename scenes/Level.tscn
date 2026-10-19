@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b4m7n568yckan" path="res://scenes/Goal.tscn" id="2_qifjx"]
 [ext_resource type="PackedScene" uid="uid://daw1y03v2fcgq" path="res://scenes/Platform.tscn" id="4_kl8ac"]
 [ext_resource type="PackedScene" uid="uid://d2dt0loijrx2o" path="res://scenes/Moving_Platform.tscn" id="6_dke22"]
+[ext_resource type="PackedScene" uid="uid://b5jldhjily10n" path="res://scenes/Ladder.tscn" id="7_4qegb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vonw3"]
 texture = ExtResource("1_u52ul")
@@ -46,18 +47,6 @@ tile_map_data = PackedByteArray("AAAAACcAAQABAAEAAAABACcAAQABAAEAAAACACcAAQABAAE
 tile_set = SubResource("TileSet_i3pqv")
 
 [node name="Platforms" type="Node2D" parent="." unique_id=611698082]
-
-[node name="Platform" parent="Platforms" unique_id=683616483 instance=ExtResource("4_kl8ac")]
-position = Vector2(594, 558)
-
-[node name="Platform3" parent="Platforms" unique_id=2067982565 instance=ExtResource("4_kl8ac")]
-position = Vector2(935, 563)
-
-[node name="Platform2" parent="Platforms" unique_id=712033898 instance=ExtResource("4_kl8ac")]
-position = Vector2(768, 487)
-
-[node name="Platform4" parent="Platforms" unique_id=289010685 instance=ExtResource("4_kl8ac")]
-position = Vector2(940, 396)
 
 [node name="Platform13" parent="Platforms" unique_id=1361915265 instance=ExtResource("4_kl8ac")]
 position = Vector2(1164, -254)
@@ -101,29 +90,11 @@ position = Vector2(651.04004, -1112.96)
 [node name="Platform26" parent="Platforms" unique_id=244403040 instance=ExtResource("4_kl8ac")]
 position = Vector2(715.04004, -1112.96)
 
-[node name="Platform5" parent="Platforms" unique_id=112392288 instance=ExtResource("4_kl8ac")]
-position = Vector2(749, 301)
-
-[node name="Platform6" parent="Platforms" unique_id=1523987562 instance=ExtResource("4_kl8ac")]
-position = Vector2(506, 365)
-
-[node name="Platform7" parent="Platforms" unique_id=459622589 instance=ExtResource("4_kl8ac")]
-position = Vector2(440, 482)
-
-[node name="Platform8" parent="Platforms" unique_id=475346752 instance=ExtResource("4_kl8ac")]
-position = Vector2(1152, 246)
-
-[node name="Platform9" parent="Platforms" unique_id=872452260 instance=ExtResource("4_kl8ac")]
-position = Vector2(954, 106)
-
 [node name="Platform10" parent="Platforms" unique_id=1986577197 instance=ExtResource("4_kl8ac")]
-position = Vector2(723, -10)
+position = Vector2(689, -12)
 
 [node name="Platform29" parent="Platforms" unique_id=1504746457 instance=ExtResource("4_kl8ac")]
-position = Vector2(659.04004, -9.959961)
-
-[node name="Platform12" parent="Platforms" unique_id=874626922 instance=ExtResource("4_kl8ac")]
-position = Vector2(575, 155)
+position = Vector2(625, -12)
 
 [node name="MovingPlatform" parent="Platforms" unique_id=2063177087 instance=ExtResource("6_dke22")]
 position = Vector2(989.04004, -102.95996)
@@ -135,3 +106,65 @@ position = Vector2(650, -19)
 
 [node name="Goal" parent="." unique_id=2067666519 instance=ExtResource("2_qifjx")]
 position = Vector2(889, -3929)
+
+[node name="Ladders" type="Node2D" parent="." unique_id=1136907249]
+
+[node name="Ladder" parent="Ladders" unique_id=271080392 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 624)
+
+[node name="Ladder2" parent="Ladders" unique_id=496486750 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 592)
+
+[node name="Ladder3" parent="Ladders" unique_id=577774517 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 560)
+
+[node name="Ladder4" parent="Ladders" unique_id=1791681590 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 528)
+
+[node name="Ladder5" parent="Ladders" unique_id=1033615417 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 496)
+
+[node name="Ladder6" parent="Ladders" unique_id=769081245 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 464)
+
+[node name="Ladder7" parent="Ladders" unique_id=1892895519 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 432)
+
+[node name="Ladder8" parent="Ladders" unique_id=483693814 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 400)
+
+[node name="Ladder9" parent="Ladders" unique_id=1785654240 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 368)
+
+[node name="Ladder10" parent="Ladders" unique_id=1129229148 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 336)
+
+[node name="Ladder11" parent="Ladders" unique_id=85361329 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 304)
+
+[node name="Ladder12" parent="Ladders" unique_id=425293583 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 272)
+
+[node name="Ladder13" parent="Ladders" unique_id=752374381 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 240)
+
+[node name="Ladder14" parent="Ladders" unique_id=906947533 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 208)
+
+[node name="Ladder15" parent="Ladders" unique_id=316296123 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 176)
+
+[node name="Ladder16" parent="Ladders" unique_id=744399342 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 144)
+
+[node name="Ladder17" parent="Ladders" unique_id=217395789 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 112)
+
+[node name="Ladder18" parent="Ladders" unique_id=1262742977 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 80)
+
+[node name="Ladder19" parent="Ladders" unique_id=1077117295 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 48)
+
+[node name="Ladder20" parent="Ladders" unique_id=553054649 instance=ExtResource("7_4qegb")]
+position = Vector2(671, 16)

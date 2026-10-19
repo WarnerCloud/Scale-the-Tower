@@ -9,10 +9,15 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
 const NUM_LIVES = 3
 const KILL_SPEED = 1000
+const CLIMB_SPEED = 100
 
 var lives
 var reset_pos
 var player_locked
+
+var on_ladder = false
+var climbing = false
+var num_ladders = 0
 
 func _init() -> void:
 	lives = NUM_LIVES
@@ -27,25 +32,39 @@ func _physics_process(delta: float) -> void:
 	if (velocity.y > KILL_SPEED):
 		take_damage()
 	
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+	if (on_ladder && Input.is_action_just_pressed("ui_up")):
+		climbing = true
+
+	if (!climbing):
+		# Add the gravity.
+		if not is_on_floor():
+			velocity += get_gravity() * delta
+	else:
+		# Handle Climbing
+		var y_direction := Input.get_axis("ui_up", "ui_down")
+		if (!player_locked):
+			if y_direction:
+				velocity.y = y_direction * CLIMB_SPEED
+			else:
+				velocity.y = move_toward(velocity.y, 0, CLIMB_SPEED)
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("ui_accept") and (is_on_floor() || climbing):
 		velocity.y = JUMP_VELOCITY
+		climbing = false
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
+	var x_direction := Input.get_axis("ui_left", "ui_right")
 	if (!player_locked):
-		if direction:
-			velocity.x = direction * SPEED
+		if x_direction:
+			velocity.x = x_direction * SPEED
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
 
+# Respawn after death animation
 func _on_death_timer_timeout() -> void:
 	lives -= 1
 	if (lives == 0):
@@ -57,8 +76,9 @@ func _on_death_timer_timeout() -> void:
 	player_locked = false
 	scoreboard.update_score(lives)
 
-
+# Start death animation
 func take_damage() -> void:
+	# Don't take damage twice in a row
 	if (player_locked):
 		return
 	collision_shape.set_deferred("disabled", true)
@@ -69,3 +89,13 @@ func take_damage() -> void:
 
 func update_respawn(pos: Vector2):
 	reset_pos = pos
+
+func enter_ladder():
+	on_ladder = true
+	num_ladders += 1
+
+func exit_ladder():
+	num_ladders -= 1
+	if (num_ladders <= 0):
+		on_ladder = false
+		climbing = false
