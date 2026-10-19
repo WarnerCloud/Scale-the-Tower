@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dtbwonv8kt8gq"]
+
+[ext_resource type="Script" uid="uid://c0l0ueg7pdfln" path="res://scripts/lose.gd" id="1_05mc5"]
+
+[sub_resource type="FontFile" id="FontFile_dke22"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_qifjx"]
+font = SubResource("FontFile_dke22")
+font_size = 32
+
+[node name="WinScreen" type="Control" unique_id=1960513607]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_05mc5")
+
+[node name="Label" type="Label" parent="." unique_id=294207006]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 296.0
+offset_right = 627.0
+offset_bottom = 341.0
+text = "You Lost!"
+label_settings = SubResource("LabelSettings_qifjx")
+
+[node name="Button" type="Button" parent="." unique_id=1866481980]
+layout_mode = 0
+offset_left = 517.0
+offset_top = 346.0
+offset_right = 605.0
+offset_bottom = 377.0
+text = "Play Again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

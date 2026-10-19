@@ -74,7 +74,7 @@ func _physics_process(delta: float) -> void:
 func _on_death_timer_timeout() -> void:
 	lives -= 1
 	if (lives == 0):
-		get_tree().reload_current_scene()
+		get_tree().call_deferred("change_scene_to_file", "res://scenes/Lose.tscn")
 
 	collision_shape.set_deferred("disabled", false)
 	velocity = Vector2(0, 0)
