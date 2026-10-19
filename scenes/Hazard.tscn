@@ -33,7 +33,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_37okk"]
-size = Vector2(32, 23)
+size = Vector2(30, 23)
 
 [node name="Hazard" type="Node2D" unique_id=2020199833]
 
