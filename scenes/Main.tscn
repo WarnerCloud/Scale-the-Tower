@@ -5,14 +5,14 @@
 [ext_resource type="Script" uid="uid://cjsm3afqu26h5" path="res://scripts/scoreboard.gd" id="5_vcsgt"]
 
 [sub_resource type="Gradient" id="Gradient_rarhs"]
-colors = PackedColorArray(0.2290551, 0.5416081, 0.6183218, 1, 0.13170761, 0.37947136, 0.47604418, 1)
+colors = PackedColorArray(0.464361, 0.8054607, 0.8945889, 1, 0.32079574, 0.6899549, 0.84046715, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_u057j"]
 gradient = SubResource("Gradient_rarhs")
 
 [node name="Game" type="Node2D" unique_id=1825026723]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=73624194]
+[node name="background" type="Sprite2D" parent="." unique_id=73624194]
 position = Vector2(748.9458, -2374.5532)
 rotation = -1.5707964
 scale = Vector2(18.550919, 1497.9183)
