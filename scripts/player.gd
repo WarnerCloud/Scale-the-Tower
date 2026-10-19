@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var timer: Timer = %DeathTimer
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var start_position: Marker2D = %StartPosition
@@ -53,9 +54,14 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 		climbing = false
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	# Horizontal movement
 	var x_direction := Input.get_axis("ui_left", "ui_right")
+
+	if (x_direction > 0):
+		sprite.flip_h = false
+	elif (x_direction < 0):
+		sprite.flip_h = true
+
 	if (!player_locked):
 		if x_direction:
 			velocity.x = x_direction * SPEED

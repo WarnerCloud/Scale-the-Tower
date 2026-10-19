@@ -21,7 +21,7 @@ height = 58.0
 collision_layer = 2
 script = ExtResource("1_onrkg")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1220016135]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=867546175]
 texture_filter = 1
 position = Vector2(0, -36)
 sprite_frames = SubResource("SpriteFrames_37okk")
