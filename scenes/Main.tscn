@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://dj6nkp8wk0e36" path="res://scenes/Level.tscn" id="2_rarhs"]
 [ext_resource type="PackedScene" uid="uid://cdkl1154g5ttr" path="res://scenes/Player.tscn" id="3_0bbpv"]
-[ext_resource type="PackedScene" uid="uid://bteoouq734v8o" path="res://scenes/Hazard.tscn" id="3_vcsgt"]
 [ext_resource type="Script" uid="uid://cjsm3afqu26h5" path="res://scripts/scoreboard.gd" id="5_vcsgt"]
 
 [sub_resource type="Gradient" id="Gradient_rarhs"]
@@ -26,9 +25,6 @@ one_shot = true
 
 [node name="Level" parent="." unique_id=1438618234 instance=ExtResource("2_rarhs")]
 position = Vector2(0, -640)
-
-[node name="Hazard" parent="." unique_id=1892835829 instance=ExtResource("3_vcsgt")]
-position = Vector2(827, -43)
 
 [node name="Character" parent="." unique_id=150940956 instance=ExtResource("3_0bbpv")]
 position = Vector2(574, -52)
