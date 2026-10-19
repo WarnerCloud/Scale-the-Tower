@@ -33,7 +33,7 @@ func _physics_process(delta: float) -> void:
 	if (velocity.y > KILL_SPEED):
 		take_damage()
 	
-	if (on_ladder && Input.is_action_just_pressed("ui_up")):
+	if (on_ladder && Input.is_action_pressed("ui_up")):
 		climbing = true
 
 	if (!climbing):
