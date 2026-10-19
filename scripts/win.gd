@@ -2,4 +2,4 @@ extends Control
 
 
 func _on_button_pressed() -> void:
-	call_deferred("get_tree().change_scene_to_file", "res://scenes/Main.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://scenes/Main.tscn")
