@@ -1,20 +1,52 @@
 [gd_scene format=3 uid="uid://bteoouq734v8o"]
 
-[ext_resource type="Texture2D" uid="uid://rna7uv1a2n8s" path="res://assets/test.png" id="1_ljgm1"]
+[ext_resource type="Texture2D" uid="uid://sqoumf0cns8k" path="res://assets/hazard.png" id="1_wf14v"]
 [ext_resource type="PackedScene" uid="uid://bmjd5o5a8e8c5" path="res://scenes/Killbox.tscn" id="2_wf14v"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fylv"]
+atlas = ExtResource("1_wf14v")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etcsx"]
+atlas = ExtResource("1_wf14v")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0fvsl"]
+atlas = ExtResource("1_wf14v")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_37okk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fylv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etcsx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0fvsl")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_37okk"]
-size = Vector2(48, 48)
+size = Vector2(32, 23)
 
 [node name="Hazard" type="Node2D" unique_id=2020199833]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1831415661]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=183786565]
 texture_filter = 1
-texture = ExtResource("1_ljgm1")
+sprite_frames = SubResource("SpriteFrames_37okk")
+autoplay = "default"
+frame_progress = 0.8299713
 
 [node name="killbox" parent="." unique_id=738268983 instance=ExtResource("2_wf14v")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killbox" unique_id=2099687104]
+position = Vector2(0, 4.5)
 shape = SubResource("RectangleShape2D_37okk")
 
 [editable path="killbox"]
