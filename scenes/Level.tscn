@@ -86,13 +86,13 @@ position = Vector2(1111, -972)
 position = Vector2(933.04004, -1216.96)
 
 [node name="Platform31" parent="Platforms" unique_id=683616483 instance=ExtResource("4_kl8ac")]
-position = Vector2(803, -1313)
-
-[node name="Platform32" parent="Platforms" unique_id=520113851 instance=ExtResource("4_kl8ac")]
-position = Vector2(739, -1313)
+position = Vector2(803, -1386)
 
 [node name="Platform25" parent="Platforms" unique_id=1542066937 instance=ExtResource("4_kl8ac")]
 position = Vector2(651.04004, -1112.96)
+
+[node name="Platform32" parent="Platforms" unique_id=520113851 instance=ExtResource("4_kl8ac")]
+position = Vector2(739, -1386)
 
 [node name="Platform26" parent="Platforms" unique_id=244403040 instance=ExtResource("4_kl8ac")]
 position = Vector2(715.04004, -1112.96)
@@ -106,11 +106,11 @@ position = Vector2(625, -12)
 [node name="MovingPlatform" parent="Platforms" unique_id=2063177087 instance=ExtResource("6_dke22")]
 position = Vector2(989.04004, -102.95996)
 
-[node name="Platform" parent="Platforms" unique_id=276260942 instance=ExtResource("4_kl8ac")]
-position = Vector2(773, -1569)
-
 [node name="MovingPlatform2" parent="Platforms" unique_id=987523759 instance=ExtResource("6_dke22")]
-position = Vector2(909, -1569)
+position = Vector2(1019, -1642)
+
+[node name="Platform" parent="Platforms" unique_id=276260942 instance=ExtResource("4_kl8ac")]
+position = Vector2(773, -1642)
 
 [node name="Checkpoints" type="Node2D" parent="." unique_id=630425738]
 
@@ -188,7 +188,7 @@ position = Vector2(0, -576)
 position = Vector2(0, -608)
 
 [node name="Ladder2" type="Node2D" parent="Ladders" unique_id=117760030]
-position = Vector2(772, -1317)
+position = Vector2(772, -1390)
 
 [node name="Ladder" parent="Ladders/Ladder2" unique_id=605016971 instance=ExtResource("7_4qegb")]
 
