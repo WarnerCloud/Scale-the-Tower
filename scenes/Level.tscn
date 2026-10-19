@@ -62,6 +62,38 @@ position = Vector2(947, -3263)
 [node name="Platform37" parent="Platforms" unique_id=485488170 instance=ExtResource("4_kl8ac")]
 position = Vector2(820, -3402)
 
+[node name="Platform37" parent="Platforms/Platform37" unique_id=1194500190 instance=ExtResource("4_kl8ac")]
+position = Vector2(-47.924866, -141.08545)
+metadata/_scene_painted = true
+
+[node name="Platform38" parent="Platforms/Platform37" unique_id=223273294 instance=ExtResource("4_kl8ac")]
+position = Vector2(168.95721, -203.3584)
+metadata/_scene_painted = true
+
+[node name="Platform39" parent="Platforms/Platform37" unique_id=417304011 instance=ExtResource("4_kl8ac")]
+position = Vector2(77, -298)
+metadata/_scene_painted = true
+
+[node name="Platform40" parent="Platforms/Platform37" unique_id=1760747783 instance=ExtResource("4_kl8ac")]
+position = Vector2(-10, -398)
+metadata/_scene_painted = true
+
+[node name="Platform41" parent="Platforms/Platform37" unique_id=563191928 instance=ExtResource("4_kl8ac")]
+position = Vector2(-25, -515)
+metadata/_scene_painted = true
+
+[node name="Platform42" parent="Platforms/Platform37" unique_id=649966500 instance=ExtResource("4_kl8ac")]
+position = Vector2(37, -515)
+metadata/_scene_painted = true
+
+[node name="Platform43" parent="Platforms/Platform37" unique_id=2051715056 instance=ExtResource("4_kl8ac")]
+position = Vector2(99, -515)
+metadata/_scene_painted = true
+
+[node name="Platform44" parent="Platforms/Platform37" unique_id=1277345369 instance=ExtResource("4_kl8ac")]
+position = Vector2(161, -515)
+metadata/_scene_painted = true
+
 [node name="Platform16" parent="Platforms" unique_id=1310636103 instance=ExtResource("4_kl8ac")]
 position = Vector2(1037.04, -431.95996)
 
@@ -346,6 +378,12 @@ position = Vector2(957, -1912)
 
 [node name="Hazard13" parent="Hazards" unique_id=636925658 instance=ExtResource("8_faw0r")]
 position = Vector2(861, -2185)
+
+[node name="Hazard24" parent="Hazards" unique_id=1786399919 instance=ExtResource("8_faw0r")]
+position = Vector2(963, -3283)
+
+[node name="Hazard25" parent="Hazards" unique_id=1946714470 instance=ExtResource("8_faw0r")]
+position = Vector2(756, -3563)
 
 [node name="Hazard19" parent="Hazards" unique_id=1305855627 instance=ExtResource("8_faw0r")]
 position = Vector2(893, -2185)
