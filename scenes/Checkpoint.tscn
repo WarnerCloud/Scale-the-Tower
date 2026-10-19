@@ -1,7 +1,34 @@
 [gd_scene format=3 uid="uid://ci7322ju0pd2l"]
 
 [ext_resource type="Script" uid="uid://81b2cu2o3jv8" path="res://scripts/checkpoint.gd" id="1_6we3g"]
-[ext_resource type="Texture2D" uid="uid://dx8y3ailatvck" path="res://assets/flag.png" id="1_s2agh"]
+[ext_resource type="Texture2D" uid="uid://ckxhcadmtf014" path="res://assets/flag-sheet.png" id="2_6we3g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52r7o"]
+atlas = ExtResource("2_6we3g")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6we3g"]
+atlas = ExtResource("2_6we3g")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_37okk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52r7o")
+}],
+"loop": 0,
+"name": &"active",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6we3g")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6we3g"]
 size = Vector2(15, 22)
@@ -10,10 +37,11 @@ size = Vector2(15, 22)
 collision_mask = 2
 script = ExtResource("1_6we3g")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=831674972]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=209956056]
 texture_filter = 1
 position = Vector2(4, -10)
-texture = ExtResource("1_s2agh")
+sprite_frames = SubResource("SpriteFrames_37okk")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1644683964]
 position = Vector2(6.5, -9)
