@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d2dt0loijrx2o" path="res://scenes/Moving_Platform.tscn" id="6_dke22"]
 [ext_resource type="PackedScene" uid="uid://b5jldhjily10n" path="res://scenes/Ladder.tscn" id="7_4qegb"]
 [ext_resource type="PackedScene" uid="uid://bteoouq734v8o" path="res://scenes/Hazard.tscn" id="8_faw0r"]
+[ext_resource type="PackedScene" uid="uid://co6fgig1ocvn7" path="res://scenes/Birds.tscn" id="9_2eouu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vonw3"]
 texture = ExtResource("1_u52ul")
@@ -224,3 +225,11 @@ position = Vector2(699, -1133)
 [node name="Hazard3" parent="Hazards" unique_id=236507662 instance=ExtResource("8_faw0r")]
 position = Vector2(1016, -864)
 
+[node name="Birds" parent="." unique_id=1903243564 instance=ExtResource("9_2eouu")]
+position = Vector2(853, -256)
+
+[node name="Birds2" parent="." unique_id=370887248 instance=ExtResource("9_2eouu")]
+position = Vector2(808, -1512)
+
+[node name="Birds3" parent="." unique_id=436157478 instance=ExtResource("9_2eouu")]
+position = Vector2(900, -1722)
