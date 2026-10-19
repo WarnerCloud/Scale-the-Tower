@@ -211,7 +211,7 @@ position = Vector2(1021, -2171)
 position = Vector2(819, -3408)
 
 [node name="Goal" parent="." unique_id=2067666519 instance=ExtResource("2_qifjx")]
-position = Vector2(889, -3929)
+position = Vector2(887, -3923)
 
 [node name="Ladders" type="Node2D" parent="." unique_id=1136907249]
 
