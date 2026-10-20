@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dj6nkp8wk0e36" path="res://scenes/Level.tscn" id="2_rarhs"]
 [ext_resource type="PackedScene" uid="uid://cdkl1154g5ttr" path="res://scenes/Player.tscn" id="3_0bbpv"]
+[ext_resource type="FontFile" uid="uid://c8v0sg8yvbkj4" path="res://assets/TimesNewPixel (1).ttf" id="4_rarhs"]
 [ext_resource type="Script" uid="uid://cjsm3afqu26h5" path="res://scripts/scoreboard.gd" id="5_vcsgt"]
 
 [sub_resource type="Gradient" id="Gradient_rarhs"]
@@ -9,6 +10,9 @@ colors = PackedColorArray(0.464361, 0.8054607, 0.8945889, 1, 0.32079574, 0.68995
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_u057j"]
 gradient = SubResource("Gradient_rarhs")
+
+[sub_resource type="LabelSettings" id="LabelSettings_tobdj"]
+font = ExtResource("4_rarhs")
 
 [node name="Game" type="Node2D" unique_id=1825026723]
 
@@ -51,6 +55,7 @@ offset_top = 29.0
 offset_right = 170.0
 offset_bottom = 52.0
 text = "Lives Remaining: 3"
+label_settings = SubResource("LabelSettings_tobdj")
 metadata/_edit_use_anchors_ = true
 
 [connection signal="timeout" from="DeathTimer" to="Character" method="_on_death_timer_timeout"]
