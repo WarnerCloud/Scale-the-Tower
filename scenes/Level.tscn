@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://rna7uv1a2n8s" path="res://assets/test.png" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://ci7322ju0pd2l" path="res://scenes/Checkpoint.tscn" id="2_k5jlv"]
 [ext_resource type="PackedScene" uid="uid://b4m7n568yckan" path="res://scenes/Goal.tscn" id="2_qifjx"]
+[ext_resource type="Texture2D" uid="uid://cidbk03u12vl7" path="res://assets/new-tower.png" id="2_rccsh"]
 [ext_resource type="PackedScene" uid="uid://daw1y03v2fcgq" path="res://scenes/Platform.tscn" id="4_kl8ac"]
 [ext_resource type="PackedScene" uid="uid://d2dt0loijrx2o" path="res://scenes/Moving_Platform.tscn" id="6_dke22"]
 [ext_resource type="PackedScene" uid="uid://b5jldhjily10n" path="res://scenes/Ladder.tscn" id="7_4qegb"]
@@ -43,6 +44,12 @@ position = Vector2(850.95996, -1864.0402)
 scale = Vector2(4.863203, 4.863203)
 texture = ExtResource("1_6vs76")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=783696640]
+texture_filter = 1
+position = Vector2(856, -2159)
+scale = Vector2(2, 2)
+texture = ExtResource("2_rccsh")
+
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=927961146]
 texture_filter = 1
 tile_map_data = PackedByteArray("AAAAACcAAQABAAEAAAABACcAAQABAAEAAAACACcAAQABAAEAAAADACcAAQABAAEAAAAEACcAAQABAAEAAAAFACcAAQABAAEAAAAGACcAAQABAAEAAAAHACcAAQABAAEAAAAIACcAAQABAAEAAAAJACcAAQABAAEAAAAKACcAAQABAAEAAAALACcAAQABAAEAAAAMACcAAQABAAEAAAANACcAAQABAAEAAAAOACcAAQABAAEAAAAPACcAAQABAAEAAAAQACcAAQABAAEAAAARACcAAQABAAEAAAASACcAAQABAAEAAAATACcAAQABAAEAAAAUACcAAQABAAEAAAAVACcAAQABAAEAAAAWACcAAQABAAEAAAAXACcAAQABAAEAAAAYACcAAQABAAEAAAAZACcAAQABAAEAAAAaACcAAQABAAEAAAAbACcAAQABAAEAAAAcACcAAQABAAEAAAAdACcAAQABAAEAAAAeACcAAQABAAEAAAAfACcAAQABAAEAAAAgACcAAQABAAEAAAAhACcAAQABAAEAAAAiACcAAQABAAEAAAAjACcAAQABAAEAAAAkACcAAQABAAEAAAAlACcAAQABAAEAAAAmACcAAQABAAEAAAAnACcAAQABAAEAAAAoACcAAQABAAEAAAApACcAAQABAAEAAAAqACcAAQABAAEAAAArACcAAQABAAEAAAAsACcAAQABAAEAAAAtACcAAQABAAEAAAAuACcAAQABAAEAAAAvACcAAQABAAEAAAAwACcAAQABAAEAAAAxACcAAQABAAEAAAAyACcAAQABAAEAAAAzACcAAQABAAEAAAA0ACcAAQABAAEAAAA1ACcAAQABAAEAAAA2ACcAAQABAAEAAAA3ACcAAQABAAEAAAA4ACcAAQABAAEAAAA5ACcAAQABAAEAAAA6ACcAAQABAAEAAAA7ACcAAQABAAEAAAA8ACcAAQABAAEAAAA9ACcAAQABAAEAAAA+ACcAAQABAAEAAAA/ACcAAQABAAEAAABAACcAAQABAAEAAABBACcAAQABAAEAAABCACcAAQABAAEAAABDACcAAQABAAEAAABEACcAAQABAAEAAABFACcAAQABAAEAAABGACcAAQABAAEAAABHACcAAQABAAEAAABIACcAAQABAAEAAABJACcAAQABAAEAAABKACcAAQABAAEAAABLACcAAQABAAEAAABMACcAAQABAAEAAABNACcAAQABAAEAAABOACcAAQABAAEAAABSACcAAQABAAEAAABRACcAAQABAAEAAABQACcAAQABAAEAAABPACcAAQABAAEAAABTACcAAQABAAEAAABUACcAAQABAAEAAABVACcAAQABAAEAAABWACcAAQABAAEAAABXACcAAQABAAEAAABYACcAAQABAAEAAABZACcAAQABAAEAAABaACcAAQABAAEAAABbACcAAQABAAEAAABcACcAAQABAAEAAABdACcAAQABAAEAAABeACcAAQABAAEAAABfACcAAQABAAEAAABgACcAAQABAAEAAABhACcAAQABAAEAAABiACcAAQABAAEAAABjACcAAQABAAEAAABkACcAAQABAAEAAABlACcAAQABAAEAAABmACcAAQABAAEAAAA=")
@@ -79,19 +86,19 @@ position = Vector2(-10, -398)
 metadata/_scene_painted = true
 
 [node name="Platform41" parent="Platforms/Platform37" unique_id=563191928 instance=ExtResource("4_kl8ac")]
-position = Vector2(-25, -515)
+position = Vector2(-57, -1536)
 metadata/_scene_painted = true
 
 [node name="Platform42" parent="Platforms/Platform37" unique_id=649966500 instance=ExtResource("4_kl8ac")]
-position = Vector2(37, -515)
+position = Vector2(5, -1536)
 metadata/_scene_painted = true
 
 [node name="Platform43" parent="Platforms/Platform37" unique_id=2051715056 instance=ExtResource("4_kl8ac")]
-position = Vector2(99, -515)
+position = Vector2(67, -1536)
 metadata/_scene_painted = true
 
 [node name="Platform44" parent="Platforms/Platform37" unique_id=1277345369 instance=ExtResource("4_kl8ac")]
-position = Vector2(161, -515)
+position = Vector2(129, -1536)
 metadata/_scene_painted = true
 
 [node name="Platform16" parent="Platforms" unique_id=1310636103 instance=ExtResource("4_kl8ac")]
@@ -211,7 +218,7 @@ position = Vector2(1021, -2171)
 position = Vector2(819, -3408)
 
 [node name="Goal" parent="." unique_id=2067666519 instance=ExtResource("2_qifjx")]
-position = Vector2(887, -3923)
+position = Vector2(855, -4944)
 
 [node name="Ladders" type="Node2D" parent="." unique_id=1136907249]
 
