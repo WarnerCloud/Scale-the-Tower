@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://luqqc2nhxcjy"
-path="res://.godot/imported/ScaleGame.png-a3e5978482e8d52b3ab3483f96bbd61b.ctex"
+uid="uid://oqnmc2atwslq"
+path="res://.godot/imported/index.icon.png-f857518611591408b04b434c0ba6f0a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://export/v1_0/ScaleGame.png"
-dest_files=["res://.godot/imported/ScaleGame.png-a3e5978482e8d52b3ab3483f96bbd61b.ctex"]
+source_file="res://export/v1_0/index.icon.png"
+dest_files=["res://.godot/imported/index.icon.png-f857518611591408b04b434c0ba6f0a2.ctex"]
 
 [params]
 
