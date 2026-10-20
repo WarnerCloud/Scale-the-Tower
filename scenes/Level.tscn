@@ -53,7 +53,85 @@ tile_set = SubResource("TileSet_i3pqv")
 [node name="Platform13" parent="Platforms" unique_id=1361915265 instance=ExtResource("4_kl8ac")]
 position = Vector2(1164, -252)
 
-[node name="Platform35" parent="Platforms" unique_id=683616483 instance=ExtResource("4_kl8ac")]
+[node name="Platform38" parent="Platforms" unique_id=1194500190 instance=ExtResource("4_kl8ac")]
+position = Vector2(772.07513, -3543.0854)
+metadata/_scene_painted = true
+
+[node name="Platform39" parent="Platforms" unique_id=417304011 instance=ExtResource("4_kl8ac")]
+position = Vector2(892, -3745)
+metadata/_scene_painted = true
+
+[node name="Platform45" parent="Platforms" unique_id=903950907 instance=ExtResource("4_kl8ac")]
+position = Vector2(810, -3927)
+metadata/_scene_painted = true
+
+[node name="Platform46" parent="Platforms" unique_id=1657841708 instance=ExtResource("4_kl8ac")]
+position = Vector2(810, -3927)
+metadata/_scene_painted = true
+
+[node name="Platform47" parent="Platforms" unique_id=683616483 instance=ExtResource("4_kl8ac")]
+position = Vector2(890, -4042)
+metadata/_scene_painted = true
+
+[node name="Platform48" parent="Platforms" unique_id=672717446 instance=ExtResource("4_kl8ac")]
+position = Vector2(1001, -4111)
+metadata/_scene_painted = true
+
+[node name="Platform49" parent="Platforms" unique_id=1677228749 instance=ExtResource("4_kl8ac")]
+position = Vector2(851, -4188)
+metadata/_scene_painted = true
+
+[node name="Platform50" parent="Platforms" unique_id=317262921 instance=ExtResource("4_kl8ac")]
+position = Vector2(822, -4540)
+metadata/_scene_painted = true
+
+[node name="Platform51" parent="Platforms" unique_id=619900130 instance=ExtResource("4_kl8ac")]
+position = Vector2(886, -4540)
+metadata/_scene_painted = true
+
+[node name="Platform52" parent="Platforms" unique_id=623400048 instance=ExtResource("4_kl8ac")]
+position = Vector2(979, -4632)
+metadata/_scene_painted = true
+
+[node name="Platform53" parent="Platforms" unique_id=164716099 instance=ExtResource("4_kl8ac")]
+position = Vector2(878, -4742)
+metadata/_scene_painted = true
+
+[node name="Platform54" parent="Platforms" unique_id=374964033 instance=ExtResource("4_kl8ac")]
+position = Vector2(759, -4824)
+metadata/_scene_painted = true
+
+[node name="Platform41" parent="Platforms" unique_id=563191928 instance=ExtResource("4_kl8ac")]
+position = Vector2(763, -4938)
+metadata/_scene_painted = true
+
+[node name="Platform42" parent="Platforms" unique_id=649966500 instance=ExtResource("4_kl8ac")]
+position = Vector2(825, -4938)
+metadata/_scene_painted = true
+
+[node name="Platform56" parent="Platforms" unique_id=1790576169 instance=ExtResource("4_kl8ac")]
+position = Vector2(839, -4974)
+rotation = -1.5707964
+metadata/_scene_painted = true
+
+[node name="Platform57" parent="Platforms" unique_id=115182048 instance=ExtResource("4_kl8ac")]
+position = Vector2(895, -4974)
+rotation = -4.712389
+metadata/_scene_painted = true
+
+[node name="Platform43" parent="Platforms" unique_id=2051715056 instance=ExtResource("4_kl8ac")]
+position = Vector2(887, -4938)
+metadata/_scene_painted = true
+
+[node name="Platform55" parent="Platforms" unique_id=196121740 instance=ExtResource("4_kl8ac")]
+position = Vector2(867, -5006)
+metadata/_scene_painted = true
+
+[node name="Platform44" parent="Platforms" unique_id=1277345369 instance=ExtResource("4_kl8ac")]
+position = Vector2(949, -4938)
+metadata/_scene_painted = true
+
+[node name="Platform35" parent="Platforms" unique_id=529624950 instance=ExtResource("4_kl8ac")]
 position = Vector2(841, -3161)
 
 [node name="Platform36" parent="Platforms" unique_id=428074339 instance=ExtResource("4_kl8ac")]
@@ -61,38 +139,6 @@ position = Vector2(947, -3263)
 
 [node name="Platform37" parent="Platforms" unique_id=485488170 instance=ExtResource("4_kl8ac")]
 position = Vector2(820, -3402)
-
-[node name="Platform37" parent="Platforms/Platform37" unique_id=1194500190 instance=ExtResource("4_kl8ac")]
-position = Vector2(-47.924866, -141.08545)
-metadata/_scene_painted = true
-
-[node name="Platform38" parent="Platforms/Platform37" unique_id=223273294 instance=ExtResource("4_kl8ac")]
-position = Vector2(168.95721, -203.3584)
-metadata/_scene_painted = true
-
-[node name="Platform39" parent="Platforms/Platform37" unique_id=417304011 instance=ExtResource("4_kl8ac")]
-position = Vector2(77, -298)
-metadata/_scene_painted = true
-
-[node name="Platform40" parent="Platforms/Platform37" unique_id=1760747783 instance=ExtResource("4_kl8ac")]
-position = Vector2(-10, -398)
-metadata/_scene_painted = true
-
-[node name="Platform41" parent="Platforms/Platform37" unique_id=563191928 instance=ExtResource("4_kl8ac")]
-position = Vector2(-57, -1536)
-metadata/_scene_painted = true
-
-[node name="Platform42" parent="Platforms/Platform37" unique_id=649966500 instance=ExtResource("4_kl8ac")]
-position = Vector2(5, -1536)
-metadata/_scene_painted = true
-
-[node name="Platform43" parent="Platforms/Platform37" unique_id=2051715056 instance=ExtResource("4_kl8ac")]
-position = Vector2(67, -1536)
-metadata/_scene_painted = true
-
-[node name="Platform44" parent="Platforms/Platform37" unique_id=1277345369 instance=ExtResource("4_kl8ac")]
-position = Vector2(129, -1536)
-metadata/_scene_painted = true
 
 [node name="Platform16" parent="Platforms" unique_id=1310636103 instance=ExtResource("4_kl8ac")]
 position = Vector2(1037.04, -431.95996)
@@ -148,7 +194,7 @@ position = Vector2(625, -12)
 [node name="MovingPlatform" parent="Platforms" unique_id=2063177087 instance=ExtResource("6_dke22")]
 position = Vector2(989.04004, -102.95996)
 
-[node name="MovingPlatform2" parent="Platforms" unique_id=987523759 instance=ExtResource("6_dke22")]
+[node name="MovingPlatform2" parent="Platforms" unique_id=1051071328 instance=ExtResource("6_dke22")]
 position = Vector2(1019, -1642)
 
 [node name="Platform" parent="Platforms" unique_id=276260942 instance=ExtResource("4_kl8ac")]
@@ -196,6 +242,9 @@ position = Vector2(989, -2165)
 [node name="Platform14" parent="Platforms" unique_id=1192095364 instance=ExtResource("4_kl8ac")]
 position = Vector2(925, -2165)
 
+[node name="MovingPlatform3" parent="Platforms" unique_id=987523759 instance=ExtResource("6_dke22")]
+position = Vector2(981, -3632)
+
 [node name="Checkpoints" type="Node2D" parent="." unique_id=630425738]
 
 [node name="checkpoint" parent="Checkpoints" unique_id=290667989 instance=ExtResource("2_k5jlv")]
@@ -211,7 +260,7 @@ position = Vector2(1021, -2171)
 position = Vector2(819, -3408)
 
 [node name="Goal" parent="." unique_id=2067666519 instance=ExtResource("2_qifjx")]
-position = Vector2(855, -4944)
+position = Vector2(856, -5011)
 
 [node name="Ladders" type="Node2D" parent="." unique_id=1136907249]
 
@@ -362,6 +411,41 @@ position = Vector2(0, -544)
 [node name="Ladder19" parent="Ladders/Ladder3" unique_id=1173342950 instance=ExtResource("7_4qegb")]
 position = Vector2(0, -576)
 
+[node name="Ladder4" type="Node2D" parent="Ladders" unique_id=54698641]
+position = Vector2(853, -4192)
+
+[node name="Ladder" parent="Ladders/Ladder4" unique_id=1482970555 instance=ExtResource("7_4qegb")]
+
+[node name="Ladder2" parent="Ladders/Ladder4" unique_id=601111831 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -32)
+
+[node name="Ladder3" parent="Ladders/Ladder4" unique_id=1363346803 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -64)
+
+[node name="Ladder4" parent="Ladders/Ladder4" unique_id=1869998143 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -96)
+
+[node name="Ladder5" parent="Ladders/Ladder4" unique_id=2100247581 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -128)
+
+[node name="Ladder6" parent="Ladders/Ladder4" unique_id=1135354130 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -160)
+
+[node name="Ladder7" parent="Ladders/Ladder4" unique_id=700864776 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -192)
+
+[node name="Ladder8" parent="Ladders/Ladder4" unique_id=1268404139 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -224)
+
+[node name="Ladder9" parent="Ladders/Ladder4" unique_id=1963860046 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -256)
+
+[node name="Ladder10" parent="Ladders/Ladder4" unique_id=107661450 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -288)
+
+[node name="Ladder11" parent="Ladders/Ladder4" unique_id=1587841474 instance=ExtResource("7_4qegb")]
+position = Vector2(0, -320)
+
 [node name="Hazards" type="Node2D" parent="." unique_id=1905558971]
 
 [node name="Hazard" parent="Hazards" unique_id=2020199833 instance=ExtResource("8_faw0r")]
@@ -384,6 +468,21 @@ position = Vector2(963, -3283)
 
 [node name="Hazard25" parent="Hazards" unique_id=1946714470 instance=ExtResource("8_faw0r")]
 position = Vector2(756, -3563)
+
+[node name="Hazard26" parent="Hazards" unique_id=297841162 instance=ExtResource("8_faw0r")]
+position = Vector2(901, -4560)
+
+[node name="Hazard28" parent="Hazards" unique_id=1621073665 instance=ExtResource("8_faw0r")]
+position = Vector2(964, -4652)
+
+[node name="Hazard29" parent="Hazards" unique_id=1998585392 instance=ExtResource("8_faw0r")]
+position = Vector2(862, -4762)
+
+[node name="Hazard30" parent="Hazards" unique_id=1104195619 instance=ExtResource("8_faw0r")]
+position = Vector2(743, -4844)
+
+[node name="Hazard27" parent="Hazards" unique_id=84134697 instance=ExtResource("8_faw0r")]
+position = Vector2(807, -4560)
 
 [node name="Hazard19" parent="Hazards" unique_id=1305855627 instance=ExtResource("8_faw0r")]
 position = Vector2(893, -2185)
@@ -458,6 +557,15 @@ position = Vector2(660, -2894)
 
 [node name="Birds7" parent="Birds" unique_id=678992739 instance=ExtResource("9_2eouu")]
 position = Vector2(685, -3290)
+
+[node name="Birds8" parent="Birds" unique_id=1414124204 instance=ExtResource("9_2eouu")]
+position = Vector2(726, -3855)
+
+[node name="Birds9" parent="Birds" unique_id=1907574745 instance=ExtResource("9_2eouu")]
+position = Vector2(877, -4097)
+
+[node name="Birds10" parent="Birds" unique_id=597713053 instance=ExtResource("9_2eouu")]
+position = Vector2(652, -4434)
 
 [node name="Birds6" parent="Birds" unique_id=1391214971 instance=ExtResource("9_2eouu")]
 position = Vector2(850, -3132)
