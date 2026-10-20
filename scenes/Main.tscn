@@ -13,9 +13,9 @@ gradient = SubResource("Gradient_rarhs")
 [node name="Game" type="Node2D" unique_id=1825026723]
 
 [node name="background" type="Sprite2D" parent="." unique_id=73624194]
-position = Vector2(748.9458, -2374.5532)
+position = Vector2(748.94574, -3084.6855)
 rotation = -1.5707964
-scale = Vector2(18.550919, 1497.9183)
+scale = Vector2(24.098827, 1497.9183)
 texture = SubResource("GradientTexture1D_u057j")
 
 [node name="DeathTimer" type="Timer" parent="." unique_id=711574262]
