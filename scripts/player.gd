@@ -5,6 +5,8 @@ extends CharacterBody2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var start_position: Marker2D = %StartPosition
 @onready var scoreboard: CanvasLayer = %Scoreboard
+@onready var jump_sound: AudioStreamPlayer2D = $JumpSound
+@onready var die_sound: AudioStreamPlayer2D = $DieSound
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -600.0
@@ -51,6 +53,7 @@ func _physics_process(delta: float) -> void:
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and (is_on_floor() || climbing):
+		jump_sound.play()
 		velocity.y = JUMP_VELOCITY
 		climbing = false
 
@@ -87,6 +90,8 @@ func take_damage() -> void:
 	# Don't take damage twice in a row
 	if (player_locked):
 		return
+		
+	die_sound.play()
 	collision_shape.set_deferred("disabled", true)
 	velocity.y = JUMP_VELOCITY/4
 	velocity.x = 0

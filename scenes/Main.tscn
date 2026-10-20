@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dj6nkp8wk0e36" path="res://scenes/Level.tscn" id="2_rarhs"]
 [ext_resource type="PackedScene" uid="uid://cdkl1154g5ttr" path="res://scenes/Player.tscn" id="3_0bbpv"]
 [ext_resource type="FontFile" uid="uid://c8v0sg8yvbkj4" path="res://assets/TimesNewPixel (1).ttf" id="4_rarhs"]
+[ext_resource type="AudioStream" uid="uid://cm850vrvlpgqr" path="res://assets/sfx/ambient_wind.wav" id="5_c01mt"]
 [ext_resource type="Script" uid="uid://cjsm3afqu26h5" path="res://scripts/scoreboard.gd" id="5_vcsgt"]
 
 [sub_resource type="Gradient" id="Gradient_rarhs"]
@@ -24,7 +25,7 @@ texture = SubResource("GradientTexture1D_u057j")
 
 [node name="DeathTimer" type="Timer" parent="." unique_id=711574262]
 unique_name_in_owner = true
-wait_time = 0.6
+wait_time = 0.8
 one_shot = true
 
 [node name="Level" parent="." unique_id=1438618234 instance=ExtResource("2_rarhs")]
@@ -57,6 +58,12 @@ offset_bottom = 52.0
 text = "Lives Remaining: 3"
 label_settings = SubResource("LabelSettings_tobdj")
 metadata/_edit_use_anchors_ = true
+
+[node name="Wind" type="AudioStreamPlayer2D" parent="." unique_id=2140021104]
+position = Vector2(850, -5657)
+stream = ExtResource("5_c01mt")
+autoplay = true
+max_distance = 6000.0
 
 [connection signal="timeout" from="DeathTimer" to="Character" method="_on_death_timer_timeout"]
 [connection signal="ready" from="Character" to="Character" method="_on_ready"]

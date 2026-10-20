@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c8btin5j0bq2c" path="res://scripts/player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://dj1oes73g35yh" path="res://assets/Hunter.png" id="2_onrkg"]
+[ext_resource type="AudioStream" uid="uid://b16n01468obv6" path="res://assets/sfx/jump_square.wav" id="3_3li8b"]
+[ext_resource type="AudioStream" uid="uid://b7wfp860be41l" path="res://assets/sfx/death.wav" id="4_mdl7e"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_37okk"]
 animations = [{
@@ -29,3 +31,9 @@ sprite_frames = SubResource("SpriteFrames_37okk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=872882337]
 position = Vector2(0, -30)
 shape = SubResource("CapsuleShape2D_37okk")
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=347854059]
+stream = ExtResource("3_3li8b")
+
+[node name="DieSound" type="AudioStreamPlayer2D" parent="." unique_id=760492833]
+stream = ExtResource("4_mdl7e")
