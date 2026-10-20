@@ -60,10 +60,10 @@ label_settings = SubResource("LabelSettings_tobdj")
 metadata/_edit_use_anchors_ = true
 
 [node name="Wind" type="AudioStreamPlayer2D" parent="." unique_id=2140021104]
-position = Vector2(850, -5657)
+position = Vector2(932, -5560)
 stream = ExtResource("5_c01mt")
 autoplay = true
-max_distance = 6000.0
+max_distance = 7000.0
 
 [connection signal="timeout" from="DeathTimer" to="Character" method="_on_death_timer_timeout"]
 [connection signal="ready" from="Character" to="Character" method="_on_ready"]
